@@ -1,5 +1,5 @@
 
-import { Assets } from '@react-navigation/stack'
+
 import React,{Component} from 'react'
 import { Text,View ,StyleSheet,SafeAreaView, Platform,StatusBar, TouchableOpacity,ImageBackground,Image} from 'react-native'
 
@@ -10,7 +10,7 @@ export default class HomeScreen extends Component
             <View style={styles.container}>
                 
                 <SafeAreaView style={styles.droidSafeArea}/>
-                <ImageBackground source={require("../Assets/bg_image.png")} style={styles.backgroundImage}>
+                <ImageBackground source={require("../assets/bg_image.png")} style={styles.backgroundImage}>
                 <View style={styles.titleBar}>
                 <Text style={styles.titleText}>ISS Tracker App</Text>
                 </View>
@@ -68,7 +68,7 @@ const styles=StyleSheet.create({
 
     },
     routeText:{
-        fontsize:35,
+        fontSize:35,
         fontWeight:'bold',
         color:'black',
         marginTop:75,
